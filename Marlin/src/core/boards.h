@@ -167,6 +167,12 @@
 #define BOARD_WEEDO_62A               1330  // WEEDO 62A board (TINA2, Monoprice Cadet, etc.)
 
 //
+// Tweaked autoinspect board
+//
+
+#define BOARD_DEETER_AUTOINSPECT      9000
+
+//
 // ATmega1281, ATmega2561
 //
 

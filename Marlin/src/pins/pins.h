@@ -86,6 +86,13 @@
   #include "ramps/pins_RAMPS_PLUS.h"            // ATmega2560, ATmega1280                 env:mega2560 env:mega1280
 
 //
+// Deeter autoinspector
+//
+
+#elif MB(DEETER_AUTOINSPECT)
+  #include "autoinspect/pins_DEETER_AUTOINSPECT.h"
+
+//
 // RAMPS Derivatives - ATmega1280, ATmega2560
 //
 
