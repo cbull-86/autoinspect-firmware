@@ -26,18 +26,20 @@
  */
 
 #define REQUIRE_MEGA2560
-#include "..\ramps\env_validate.h"
+#include "../ramps/env_validate.h"
 
 #define BOARD_INFO_NAME "Deeter Auto Inspector"
+#define DEFAULT_MACHINE_NAME  BOARD_INFO_NAME
 
 //
 // Limit Switches
 //
 #define X_STOP_PIN                            54  // PF0 / A0
-#define Y_STOP_PIN                            24  // PA2 / AD2
-#define Z_MIN_PIN                             23  // PA1 / AD1
-#define Z_MAX_PIN                             25  // PA3 / AD3
-#define SERVO0_PIN                            40  // PG1 / !RD
+#define Y_STOP_PIN                            6   // PH3 / PWM6
+#define Z_MAX_PIN             				  24   // PA2 / AD2
+//#define Z_MIN_PIN                             23  // PA1 / AD1
+//#define Z_MAX_PIN                             24   // PA2 / AD2
+//#define SERVO0_PIN                            40  // PG1 / !RD
 
 //
 // Steppers
@@ -46,18 +48,22 @@
 #define X_DIR_PIN                             62  // PK0 / A8
 #define X_ENABLE_PIN                          60  // PF6 / A6
 
-#define Y_STEP_PIN                            64  // PK2 / A10
-#define Y_DIR_PIN                             65  // PK3 / A11
-#define Y_ENABLE_PIN                          63  // PK1 / A9
+#define Y_STEP_PIN                            67  // PK5 / A13
+#define Y_DIR_PIN                             69  // PK7 / A15
+#define Y_ENABLE_PIN                          66  // PK4 / A12
 
-#define Z_STEP_PIN                            67  // PK5 / A13
-#define Z_DIR_PIN                             69  // PK7 / A15
-#define Z_ENABLE_PIN                          66  // PK4 / A12
-#define Z_MIN_PROBE_PIN                       25  // PA3 / AD3
+#define Y2_STEP_PIN                            58  // PF4 / A4
+#define Y2_DIR_PIN                             59  // PF5 / A5
+#define Y2_ENABLE_PIN                          57  // PF3 / A3
 
-#define E0_STEP_PIN                           58  // PF4 / A4
-#define E0_DIR_PIN                            59  // PF5 / A5
-#define E0_ENABLE_PIN                         57  // PF3 / A3
+#define Z_STEP_PIN                            64  // PK2 / A10
+#define Z_DIR_PIN                             65  // PK3 / A11
+#define Z_ENABLE_PIN                          63  // PK1 / A9
+//#define Z_MIN_PROBE_PIN                       25  // PA3 / AD3
+
+#define E0_STEP_PIN                           53  // PF4 / A4
+#define E0_DIR_PIN                            54  // PF5 / A5
+#define E0_ENABLE_PIN                         55  // PF3 / A3
 
 //
 // Temperature Sensors
